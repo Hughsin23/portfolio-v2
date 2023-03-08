@@ -1,36 +1,40 @@
+
+//TODO
+// get good images for my projects
+
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+    title: 'Tic Tac Toe',
+    description: "A tic tac toe game where you can use a 3x3 or 5x5 grid to play. It also features the dulcent tones of yours truely.",
       image: '/images/1.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
+      tags: ['Javascript', 'HTML', 'CSS'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 0,
   },
   {
-    title: 'E-Commerce',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    title: 'Show us your Quack',
+    description:"Featuring SQL injection protection. A social media clone for duck lovers. Sign up, submit your duck, like and comment on all the fantastic feathered fowls found forthwith!",
     image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
+    tags: ['Ruby', 'Sinatra', 'PostGresql'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 1,
   },
   {
-    title: 'WebRTC App',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+    title: 'Portfolio 1.0',
+    description: "A simple react tutorial followed code for my first portfolio, hosted on surge",
       image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
+      tags: ['React', 'JavaScript'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 2,
   },
   {
-    title: 'Unichat',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+    title: 'Portfolio 2.0',
+    description: "This very site you're on now, guided by Javascript Mastery",
     image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
+    tags: ['NextJS', 'JavaScript'],
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 3,
@@ -38,9 +42,7 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2021, text: 'Started my journey with a GA bootcamp', },
+  { year: 2022, text: 'Hired by GA as an instructional associate', },
+  { year: 2023, text: 'Jobsearching, maybe working for you ;)', }
 ];
