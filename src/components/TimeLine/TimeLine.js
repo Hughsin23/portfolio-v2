@@ -8,7 +8,7 @@ const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   // const [activeItem, setActiveItem] = useState(0);
-  // const carouselRef = useRef();
+  const carouselRef = useRef();
 
   // const scroll = (node, left) => {
   //   return node.scrollTo({ left, behavior: 'smooth' });
@@ -19,7 +19,7 @@ const Timeline = () => {
 
   //   if (carouselRef.current) {
   //     const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
   //     scroll(carouselRef.current, scrollLeft);
   //   }
   // }
@@ -43,9 +43,23 @@ const Timeline = () => {
   // }, []);
 
   return (
-    <div>
-      Timeline
-    </div>
+    <Section id="about">
+      <SectionTitle>About Me</SectionTitle>
+      <SectionText>
+        I began my Software Engineering journey at General Assembly's bootcamp in 2021, finishing up in Feb of 2022. Here's a timeline of everything that I've been up to!
+      </SectionText>
+      <CarouselContainer ref={carouselRef}>
+        <>
+          {TimeLineData.map((item, index) => (
+            // this is a special Carousel item that is pre-configured for mobile and desktop
+            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+
+            </CarouselMobileScrollNode>
+          ))}
+        </>
+      </CarouselContainer>
+
+    </Section>
   );
 };
 
